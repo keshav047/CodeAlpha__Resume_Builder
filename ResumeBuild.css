@@ -1,0 +1,159 @@
+body {
+    background: linear-gradient(to left, rgb(217, 210, 247), rgb(245, 229, 247));
+    background-image: url(temple1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.col-md-12 {
+    overflow: hidden;
+    background: linear-gradient(to bottom, rgb(122, 214, 228));
+
+}
+.one{
+   margin-top: 40px;
+   font-size:2.4rem; 
+   font-family: "Oswald";
+   font-weight: 600;
+   text-align: center;
+   color:white;
+   text-shadow: 10px solid blue;
+   }
+
+.one:hover{
+    color: red;
+    font-size: 5rem;
+    
+}
+.text {
+    margin-top: 150px;
+    position: absolute;
+    width: auto;
+    left: 10vw;
+    transform: translateY(50%);
+    font-size: 2.4rem;
+    color: orangered;
+}
+
+.title {
+    text-align: center;
+    font-size: 1em;
+    font-family: "Oswald";
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    margin: 0;
+    color:orangered;
+}
+
+.title strong {
+    display: block;
+    font-weight: 700;
+    font-size: 2em;
+    line-height: 1em;
+}
+
+.title em {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.899em;
+    line-height: 1em;
+    letter-spacing: 0.29em;
+    margin-left: 0.25em;
+}
+
+#na {
+    position: absolute;
+    transform: translateX(3em);
+    font-family: "Oswald";
+    font-size: 0.6em;
+    color: #222;
+    margin: 0 17px;
+    padding: 0;
+    text-align: right;
+}
+
+@keyframes swing {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(-45deg);
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    .text {
+        right: 50%;
+        top: 10%;
+        transform: translateX(50%);
+        font-size: 7vw;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+}
+
+.col-md-5 {
+    background-color: rgba(248, 248, 249, 0.397);
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 1%;
+    margin: 3%;
+    margin-left: 4.5%;
+}
+
+#cv-form,
+#cv-template {
+    display: none;
+}
+
+.myimg {
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+    background: no-repeat;
+    background-size: cover;
+    margin: 10px auto;
+    height: 250px;
+    width: 250px;
+}
+
+.container {
+    width: 100%;
+}
+
+.card {
+    border-style: none;
+}
+
+.card-header {
+    border-style: none;
+}
+
+.bg {
+    background-color: rgb(205, 236, 254);
+}
+
+
+#cv-template {
+    width: 100vw;
+    height: 100vh;
+}
+
+@media print {
+    body {
+        background: transparent !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+        font-size: 10pt;
+    }
+
+    #printbutton {
+        display: none;
+    }
+}
